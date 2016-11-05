@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://brestopencampus.com/beers"
+           targetNamespace="http://brestopencampus.com/beers" elementFormDefault="qualified">
+
+    <xs:element name="getBeerRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getBeerResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Beer" type="tns:Beer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="Beer">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="alcohol" type="xs:int"/>
+            <xs:element name="from" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

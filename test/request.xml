@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+				  xmlns:gs="http://brestopencampus.com/beers">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <gs:getBeerRequest>
+         <gs:name>1664</gs:name>
+      </gs:getBeerRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
