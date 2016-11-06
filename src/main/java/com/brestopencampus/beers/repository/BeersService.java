@@ -8,4 +8,6 @@ import com.brestopencampus.beers.Beer;
 public interface BeersService {
 
   Beer findBeer(String name);
+
+  void addBeer(Beer b);
 }

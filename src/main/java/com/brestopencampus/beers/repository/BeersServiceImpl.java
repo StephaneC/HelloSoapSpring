@@ -52,4 +52,10 @@ public class BeersServiceImpl implements BeersService {
     return null;
   }
 
+  @Override
+  public void addBeer(Beer b) {
+    System.out.println("add beer=" + b.getName());
+    beers.add(b);
+  }
+
 }

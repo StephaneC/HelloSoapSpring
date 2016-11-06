@@ -31,4 +31,14 @@ public class BeersEndPoint {
 
     return response;
   }
+
+  @PayloadRoot(namespace = NAMESPACE_URI, localPart = "addBeerRequest")
+  @ResponsePayload
+  public AddBeerResponse addBeer(@RequestPayload AddBeerRequest request) {
+    System.out.println("add beer=" + request.getBeer().getName());
+    AddBeerResponse response = new AddBeerResponse();
+    beersRepository.addBeer(request.getBeer());
+
+    return response;
+  }
 }
