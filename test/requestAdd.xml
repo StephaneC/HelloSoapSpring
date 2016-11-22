@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:beer="http://brestopencampus.com/beers">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <beer:addBeerRequest>
+         <beer:Beer>
+            <beer:name>bbdl</beer:name>
+            <beer:alcohol>2</beer:alcohol>
+            <beer:from>nowhere</beer:from>
+         </beer:Beer>
+      </beer:addBeerRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
